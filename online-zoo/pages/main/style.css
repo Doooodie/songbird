@@ -1,4 +1,6 @@
 :root {
+  --black: #000000;
+  --white: #ffffff;
   --green: #4b9200;
   --orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   --yellow: #ffee2e;
@@ -56,14 +58,14 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-.header {
-  background: #000000;
-  backdrop-filter: blur(2px);
-}
-
-.header-nav {
+.container {
   max-width: 1160px;
   margin: 0 auto;
+}
+
+.header {
+  background: var(--black);
+  backdrop-filter: blur(2px);
 }
 
 .header-container {
@@ -79,7 +81,7 @@ html {
 .header-link {
   font-weight: 500;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -95,7 +97,7 @@ html {
   margin-bottom: 14px;
   width: 82px;
   height: 52px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   border-radius: 2px;
   display: flex;
   align-items: center;
@@ -127,4 +129,54 @@ html {
 
 .main {
   background-color: #e5e5e5;
+}
+
+.giant-panda {
+  background: url(../../assets/images/giant-panda.jpg) no-repeat bottom / cover;
+}
+
+.giant-panda-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.giant-panda-heading {
+  position: relative;
+  z-index: -0;
+  margin: 86px 12px 60px 0;
+  font-weight: 700;
+  font-size: 106px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.heading-yellow {
+  color: var(--yellow);
+}
+
+.giant-panda-circle {
+  position: absolute;
+  bottom: 9px;
+  right: 96px;
+  z-index: -1;
+  width: 465px;
+  height: 465px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.giant-panda-button {
+  cursor: pointer;
+  border-radius: 25px;
+  border: 0;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 500;
+  padding: 16px 92px;
+  margin-top: 4px;
+  margin-bottom: 100px;
+  margin-right: 98px;
 }
