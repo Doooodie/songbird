@@ -30,7 +30,7 @@
               </a>
             </li>
             <li class="header-about">
-              <a href="#" class="header-link about-link active">About</a>
+              <a href="#" class="header-link about-link link-selected">About</a>
             </li>
             <li class="header-map">
               <a href="#" class="header-link map-link">Map</a>
@@ -464,6 +464,116 @@
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <a href="#" class="footer-logo-link logo-container">
+                <p class="logo-text">PetStory<br />online</p>
+                <img
+                  src="../../assets/icons/misc/bamboo_icon.svg"
+                  alt="bamboo icon"
+                  class="bamboo-icon"
+                />
+              </a>
+            </div>
+            <a href="../donate/index.html" class="footer-donate-button">
+              DONATE FOR VOLUNTEERS
+            </a>
+            <div class="footer-socials">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-facebook"></i>
+                <span class="social-text">Facebook</span>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-twitter"></i>
+                <span class="social-text">Twitter</span>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-instagram"></i>
+                <span class="social-text">Instagram</span>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-youtube"></i>
+                <span class="social-text">YouTube</span>
+              </a>
+            </div>
+          </div>
+
+          <nav class="footer-center">
+            <ul class="footer-center-container">
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link link-selected">About</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Map</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Zoos</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer-right">
+            <form
+              action=""
+              method="post"
+              name="footerSubscription"
+              class="footer-subscription"
+            >
+              <p class="subscription-heading">
+                <label for="subscription-email">Subscribe to our news</label>
+              </p>
+              <div class="subscription-form">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="subscription-email"
+                  id="subscription-email"
+                  required
+                />
+                <button
+                  type="button"
+                  class="subscription-submit submit-default"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div class="footer-right-bottom">
+              <p class="footer-right-bottom-text">
+                Designed by Alisa Samborskaya
+              </p>
+              <p class="footer-right-bottom-text">
+                ©RSSchool & ©Yem Digital 2021
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+
+    <script src="index.js"></script>
+    <script src="../../assets/scripts/email-validator.js"></script>
   </body>
 </html>
