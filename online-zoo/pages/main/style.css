@@ -36,15 +36,7 @@
 }
 
 .giant-panda-button {
-  cursor: pointer;
-  border-radius: 25px;
-  border: 0;
-  background: var(--orange);
-  color: var(--white);
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 16px 92px;
-  margin: 4px 98px 100px 0;
+  margin: 4px 98px 98px 0;
 }
 
 .flowers-bg {
@@ -81,7 +73,7 @@
 .bamboo-cap-heading {
   line-height: 58px;
   font-size: 48px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .bamboo-cap-subtitle {
@@ -122,6 +114,10 @@
   background: var(--orange);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.pets-arrow:hover {
+  background: var(--green);
 }
 
 .pets-arrow-left,
@@ -197,15 +193,8 @@
 }
 
 .pets-button {
-  cursor: pointer;
   margin-bottom: 100px;
-  padding: 16px 57px;
   background: var(--or3);
-  border: 0;
-  border-radius: 25px;
-  color: var(--white);
-  text-transform: uppercase;
-  font-weight: 500;
 }
 
 .feed-a-friend {
@@ -237,7 +226,7 @@
 }
 
 .friend-heading-first {
-  margin: 41px 0 36px 0;
+  margin: 41px 0 34px 0;
   font-size: 48px;
   color: var(--or3);
 }
@@ -303,11 +292,7 @@
 .friend-button {
   margin: 64px 0 59px 0;
   padding: 18px 73px;
-  background: var(--orange);
-  border: 0;
-  border-radius: 25px;
   color: var(--white);
-  text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
 }
@@ -413,14 +398,15 @@
   cursor: pointer;
 }
 
+.testimonials-slider::-webkit-slider-thumb:hover {
+  background: var(--orange-dark);
+}
+
+.testimonials-slider::-moz-range-thumb:hover {
+  background: var(--orange-dark);
+}
+
 .testimonials-button {
   align-self: flex-start;
-  cursor: pointer;
-  padding: 17px 84px;
   background: var(--or3);
-  border: 0;
-  border-radius: 5px;
-  color: var(--white);
-  text-transform: uppercase;
-  font-weight: 500;
 }

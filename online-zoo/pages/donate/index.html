@@ -179,9 +179,9 @@
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
-                      class="radio-dollar-icon"
+                      class="radio-dollar-icon radio-dollar-icon_checked"
                     />
-                    <span class="radio-text">1000</span>
+                    <span class="radio-text radio-text_checked">1000</span>
                   </label>
                   <label for="500-dollars" class="radio-label">
                     <img
@@ -251,7 +251,7 @@
                   <label for="once" class="period-label">Once</label>
                 </div>
               </div>
-              <button type="button" class="donation-button">
+              <button type="button" class="button donation-button">
                 FEED A FRIEND NOW
               </button>
               <p class="donations-text donations-text-bottom">
@@ -278,7 +278,9 @@
                 />
               </a>
             </div>
-            <a href="#" class="footer-donate-button">DONATE FOR VOLUNTEERS</a>
+            <a href="#" class="button square-button footer-donate-button">
+              DONATE FOR VOLUNTEERS
+            </a>
             <div class="footer-socials">
               <a
                 href="https://www.facebook.com/"
@@ -346,7 +348,7 @@
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  class="subscription-email"
+                  class="subscription-email email-default"
                   id="subscription-email"
                   required
                 />
@@ -371,6 +373,7 @@
       </footer>
     </div>
 
+    <script src="index.js"></script>
     <script src="../../assets/scripts/email-validator.js"></script>
   </body>
 </html>
