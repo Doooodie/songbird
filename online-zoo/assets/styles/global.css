@@ -46,6 +46,9 @@
   --red: #d31414;
   --magenta-dark: #111115;
   --black-blue: #333b41;
+  --cyan-blue: #404950;
+  --cyan-blue-light: #72828e;
+  --cyan-blue-verylight: #929699;
   --gray: #767474;
   --gray-transparent: rgba(196, 196, 196, 0.5);
   --gray4: #bdbdbd;
@@ -53,6 +56,7 @@
   --light-gray: #f1f3f2;
   --dark-white: #f5f7f6;
   --frosted-glass-white: rgba(253, 253, 255, 0.52);
+  --white-transparent: rgba(255, 255, 255, 0.52);
 }
 
 html {
