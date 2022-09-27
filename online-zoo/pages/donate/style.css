@@ -266,6 +266,7 @@
 }
 
 .donation-button {
+  cursor: pointer;
   margin-left: 6px;
   padding: 17px 73px;
   background: var(--orange);
