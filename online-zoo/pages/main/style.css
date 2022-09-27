@@ -299,7 +299,7 @@
 
 .testimonials {
   padding: 143px 0 180px 0;
-  background: url(../../assets/images/leaves/leav_foto.png) no-repeat 100% 127%;
+  background: url(../../assets/images/leaves/leav_foto.png) no-repeat 100% 126%;
 }
 
 .testimonials-container {
@@ -360,7 +360,7 @@
 }
 
 .testimonials-card-bottom {
-  height: 309px;
+  height: 307px;
   overflow: hidden;
   margin-block: 0;
   margin-top: 10px;
@@ -371,7 +371,7 @@
 .testimonials-slider {
   -webkit-appearance: none;
   appearance: none;
-  margin: 19px 0 32px 0;
+  margin: 22px 0 31px 0;
   width: 599px;
   height: 8px;
   border: 0.5px solid transparent;
