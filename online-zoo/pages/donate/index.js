@@ -1,6 +1,7 @@
 const radioSelections = document.querySelectorAll('.radio-selection');
 const radioDollarIcons = document.querySelectorAll('.radio-dollar-icon');
 const radioTexts = document.querySelectorAll('.radio-text');
+const anotherAmount = document.querySelector('.another-amount');
 
 radioSelections.forEach((radio, i) => {
   radio.onchange = () => {
@@ -12,3 +13,9 @@ radioSelections.forEach((radio, i) => {
     radioTexts[i].classList.add('radio-text_checked');
   };
 });
+
+anotherAmount.oninput = function () {
+  if (this.value.length > this.maxLength) {
+    this.value = this.value.slice(0, this.maxLength);
+  }
+};

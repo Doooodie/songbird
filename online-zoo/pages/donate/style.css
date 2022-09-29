@@ -110,6 +110,7 @@
 
 .money-radio-selector {
   align-self: stretch;
+  cursor: pointer;
 }
 
 .money-radio-buttons {
@@ -160,6 +161,7 @@
 
 .radio-label {
   display: flex;
+  cursor: pointer;
 }
 
 .radio-dollar-icon {
