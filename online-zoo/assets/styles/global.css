@@ -84,6 +84,10 @@ html {
   background: var(--orange-dark);
 }
 
+.button:active {
+  background: var(--green);
+}
+
 .wrapper {
   font-family: 'Roboto', sans-serif;
 }
