@@ -1,0 +1,49 @@
+@media (max-width: 1010px) {
+  .subscription-email {
+    width: 210px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 940px;
+  }
+
+  .header-logo {
+    margin-right: 63px;
+  }
+
+  .header-about,
+  .header-map,
+  .header-zoos,
+  .header-donate {
+    margin-right: 48px;
+  }
+
+  .header-contacts {
+    flex-grow: 1;
+  }
+
+  .footer-container {
+    justify-content: initial;
+  }
+
+  .footer-center-container {
+    gap: 48px;
+  }
+
+  .footer-right {
+    position: relative;
+    flex-direction: unset;
+  }
+
+  .footer-subscription {
+    position: absolute;
+    right: 35px;
+    width: 363px;
+  }
+
+  .subscription-email {
+    width: 228px;
+  }
+}

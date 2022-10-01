@@ -1,0 +1,204 @@
+@media (max-width: 1500px) {
+  .flowers-bg {
+    background: url(../../assets/images/leaves/palm_foto.png) no-repeat bottom
+        left,
+      url(../../assets/images/leaves/strelitzia1.png) no-repeat bottom right;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .giant-panda {
+    background-size: 120%;
+  }
+
+  .giant-panda-heading {
+    margin: 43px 63px 41px 0;
+    font-size: 85px;
+  }
+
+  .giant-panda-circle {
+    width: 367px;
+    height: 367px;
+    bottom: 6px;
+    right: 84px;
+  }
+
+  .giant-panda-button {
+    margin: 0px 107px 47px 0;
+  }
+
+  .flowers-bg {
+    background: url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat
+        bottom left,
+      url(../../assets/images/leaves/strelitzia1.png) no-repeat bottom right /
+        24%;
+  }
+
+  .bamboo-cap-container {
+    padding-top: 100px;
+    margin-bottom: 141px;
+  }
+
+  .bamboo-cap-img {
+    display: none;
+  }
+
+  .bamboo-cap-small-img {
+    display: initial;
+    margin-top: 9px;
+    height: 408px;
+  }
+
+  .bamboo-cap-text {
+    flex-basis: 454px;
+  }
+
+  .bamboo-cap-paragraph_first {
+    line-height: 21px;
+  }
+
+  .bamboo-cap-paragraph_second {
+    line-height: 22px;
+  }
+
+  .pets-container {
+    gap: 81px;
+  }
+
+  .pets-arrow {
+    display: none;
+  }
+
+  .pets-arrow-mobile-container {
+    display: flex;
+    justify-content: center;
+    gap: 171px;
+    flex-basis: 100%;
+  }
+
+  .pets-arrow-mobile {
+    margin: -6px 0;
+  }
+
+  .pets-card {
+    background: none;
+    border: 1px solid var(--or3);
+  }
+
+  .pets-card:hover {
+    border-color: transparent;
+  }
+
+  .cheetah-card {
+    display: none;
+  }
+
+  .alligator-card {
+    display: initial;
+  }
+
+  .pets-card-img {
+    width: 294px;
+  }
+
+  .card-bottom {
+    margin: 4px 14px 11px 16px;
+  }
+
+  .card-bottom_hover {
+    padding: 0 10px;
+  }
+
+  .pets-button {
+    margin-bottom: 140px;
+  }
+
+  .feed-a-friend {
+    padding: 30px 0 50px 0;
+  }
+
+  .friend-heading-first {
+    margin: 31px 0 23px 0;
+  }
+
+  .friend-subtitle {
+    margin-bottom: 21px;
+  }
+
+  .friend-text-bold {
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+
+  .friend-subtitle,
+  .friend-text-bold,
+  .friend-text {
+    margin-left: 49px;
+    margin-right: 48px;
+  }
+
+  .friend-heading-second {
+    margin: 43px 0 42px 0;
+  }
+
+  .friend-button {
+    margin: 72px 0 50px 0;
+  }
+
+  .testimonials {
+    padding: 103px 0 140px 0;
+    background-size: 21%;
+    background-position: 101% 122%;
+  }
+
+  .testimonials-heading {
+    margin: 0 0 33px 0;
+  }
+
+  .testimonials-card {
+    flex-basis: 293px;
+    padding-top: 10px;
+  }
+
+  .testimonials-card-bottom {
+    margin-top: 12px;
+  }
+
+  .oskar-card {
+    display: none;
+  }
+
+  .oska-card {
+    display: initial;
+  }
+
+  .mila-card {
+    display: none;
+  }
+
+  .testimonials-slider {
+    width: 390px;
+    margin: 21px 12px 52px 0;
+  }
+
+  .testimonials-slider::-webkit-slider-thumb {
+    width: 75px;
+  }
+
+  .testimonials-slider::-moz-range-thumb {
+    width: 75px;
+  }
+
+  .footer-center {
+    margin: 0 0 0 -7px;
+  }
+
+  .footer-right {
+    margin-left: 89px;
+  }
+}
