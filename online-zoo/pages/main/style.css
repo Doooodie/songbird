@@ -304,6 +304,10 @@
   margin-bottom: 78px;
 }
 
+.example-card-arrow-mobile {
+  display: none;
+}
+
 .friend-button {
   margin: 64px 0 59px 0;
   padding: 18px 73px;

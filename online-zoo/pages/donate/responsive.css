@@ -29,7 +29,7 @@
   .card-heading {
     margin-bottom: 11px;
   }
-  
+
   .amount-text {
     margin-left: 18px;
   }
@@ -56,5 +56,111 @@
 
   .footer-right {
     margin-left: 76px;
+  }
+}
+
+@media (max-width: 890px) {
+  .money-radio-buttons {
+    width: auto;
+    max-width: 810px;
+  }
+
+  .dollars-2000-selector,
+  .dollars-2000 {
+    display: none;
+  }
+
+  .dollars-1000-selector,
+  .dollars-1000 {
+    display: none;
+  }
+
+  .money-radio-labels {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    z-index: 1;
+  }
+
+  .giant-panda {
+    height: 369px;
+    background-size: 210%;
+    background-position: 37% 44%;
+  }
+
+  .donation {
+    padding: 30px 0 47px 0;
+  }
+
+  .donation-info {
+    margin-bottom: 33px;
+  }
+
+  .donation-heading-first {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .donation-text {
+    margin: 20px 0 33px 0;
+  }
+
+  .donation-card {
+    padding: 30px 0 0 0;
+  }
+
+  .card-heading {
+    margin: 0 0 24px 0;
+  }
+
+  .card-text {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  .amount-text {
+    margin: 31px 0 7px 10px;
+  }
+
+  .money-radio-buttons {
+    padding: 8px 34px 8px 34px;
+  }
+
+  .money-radio-line {
+    width: 87%;
+    bottom: 49%;
+  }
+
+  .money-radio-labels {
+    padding: 0 22px 0 18px;
+    margin-right: 0;
+  }
+
+  .radio-label {
+    margin: 0;
+  }
+
+  .dollars-50 {
+    margin-right: 16px;
+  }
+
+  .another-amount {
+    width: 180px;
+    padding: 10px 5px;
+  }
+
+  .period-inputs {
+    margin: 32px 19px 29px 0;
+  }
+
+  .donation-button {
+    margin-left: 1px;
+  }
+
+  .donations-text-bottom {
+    margin: 32px 0 33px 0;
   }
 }

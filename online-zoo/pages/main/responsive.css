@@ -29,7 +29,7 @@
   }
 
   .giant-panda-button {
-    margin: 0px 107px 47px 0;
+    margin: 0 107px 47px 0;
   }
 
   .flowers-bg {
@@ -85,15 +85,6 @@
     margin: -6px 0;
   }
 
-  .pets-card {
-    background: none;
-    border: 1px solid var(--or3);
-  }
-
-  .pets-card:hover {
-    border-color: transparent;
-  }
-
   .cheetah-card {
     display: none;
   }
@@ -112,10 +103,6 @@
 
   .card-bottom_hover {
     padding: 0 10px;
-  }
-
-  .pets-button {
-    margin-bottom: 140px;
   }
 
   .feed-a-friend {
@@ -200,5 +187,221 @@
 
   .footer-right {
     margin-left: 89px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+  .pets-card {
+    background: none;
+    border: 1px solid var(--or3);
+  }
+
+  .pets-card:hover {
+    border-color: transparent;
+  }
+
+  .pets-button {
+    margin-bottom: 140px;
+  }
+}
+
+@media (max-width: 890px) {
+  .giant-panda {
+    background-size: cover;
+  }
+
+  .bamboo-cap-small-img {
+    display: none;
+  }
+
+  .pets-cards-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 790px) {
+  .example-cards {
+    position: relative;
+  }
+
+  .example-card-arrow {
+    display: none;
+  }
+
+  .example-card-arrow-mobile {
+    display: initial;
+    position: absolute;
+    top: -16px;
+  }
+
+  .arrow-mobile-first {
+    left: 23%;
+  }
+
+  .arrow-mobile-second {
+    right: 26%;
+  }
+}
+
+@media (max-width: 640px) {
+  .giant-panda-heading {
+    font-size: 54px;
+    margin: 84px 0 0 0;
+  }
+
+  .giant-panda-circle {
+    width: 238px;
+    height: 238px;
+    bottom: 6px;
+    right: 52px;
+  }
+
+  .giant-panda-button {
+    align-self: flex-start;
+    margin: -8px 0 40px 0;
+  }
+
+  .flowers-bg {
+    background: url(../../assets/images/leaves/flower_foto1.png) no-repeat 106%
+        0px / 24.5%,
+      url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat -14% 100% /
+        31%,
+      url(../../assets/images/leaves/strelitzia1.png) no-repeat 100% 100% / 27%;
+  }
+
+  .bamboo-cap-container {
+    padding-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .bamboo-cap-text {
+    flex-basis: 495px;
+  }
+
+  .bamboo-cap-heading {
+    margin-left: 4px;
+  }
+
+  .bamboo-cap-subtitle {
+    margin: 31px 0 21px 4px;
+  }
+
+  .pets-container {
+    gap: 60px;
+  }
+
+  .pets-cards-container {
+    justify-content: space-between;
+    row-gap: 21px;
+  }
+
+  .gorilla-card,
+  .penguin-card {
+    display: none;
+  }
+
+  .pets-card-img {
+    width: 285px;
+  }
+
+  .card-bottom {
+    margin: 1px 8px 9px 12px;
+  }
+
+  .card-description-heading {
+    line-height: 17px;
+    font-size: 12.47px;
+  }
+
+  .card-description-text {
+    font-size: 11.7px;
+  }
+
+  .card-description-banana-icon {
+    width: 26px;
+  }
+
+  .card-description-fish-icon {
+    width: 37px;
+  }
+
+  .pets-arrow-mobile-container {
+    gap: 31px;
+  }
+
+  .pets-button {
+    background: var(--orange);
+  }
+
+  .feed-a-friend {
+    padding: 1px 0 20px 0;
+  }
+
+  .friend-container {
+    margin-top: 19px;
+    max-width: 100%;
+  }
+
+  .friend-heading-first {
+    margin: 11px 0 22px 0;
+    font-size: 42px;
+  }
+
+  .friend-subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .friend-subtitle,
+  .friend-text-bold,
+  .friend-text {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+
+  .friend-heading-second {
+    margin: 33px 0 23px 0;
+  }
+
+  .example-cards {
+    margin-left: 20px;
+    margin-right: 32px;
+    justify-content: space-between;
+    gap: initial;
+  }
+
+  .friend-button {
+    margin: 42px 0 60px 0;
+  }
+
+  .testimonials {
+    padding: 64px 0 80px 0;
+    background-size: 20%;
+    background-position: 102% 116%;
+  }
+
+  .testimonials-cards-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .testimonials-card {
+    flex-basis: 109px;
+    padding-bottom: 0;
+  }
+
+  .testimonials-card-bottom {
+    height: 35px;
+  }
+
+  .testimonials-slider {
+    display: none;
+  }
+
+  .testimonials-button {
+    align-self: auto;
+    margin-top: 40px;
+    width: 240px;
+    background: var(--orange);
   }
 }
