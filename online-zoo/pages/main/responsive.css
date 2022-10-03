@@ -1,61 +1,147 @@
-@media (max-width: 1500px) {
-  .flowers-bg {
-    background: url(../../assets/images/leaves/palm_foto.png) no-repeat bottom
-        left,
-      url(../../assets/images/leaves/strelitzia1.png) no-repeat bottom right;
-  }
-}
+@media (max-width: 1599px) {
+  @media (min-width: 1000px) {
+    .header {
+      position: relative;
+    }
 
-@media (max-width: 1000px) {
+    .giant-panda {
+      background-size: 120%;
+    }
+
+    .giant-panda-heading {
+      margin: 43px 63px 41px 0;
+      font-size: 85px;
+    }
+
+    .giant-panda-circle {
+      width: 367px;
+      height: 367px;
+      bottom: 6px;
+      right: 84px;
+    }
+
+    .giant-panda-button {
+      margin: 0 107px 47px 0;
+    }
+
+    .flowers-bg {
+      background: url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat
+          bottom left,
+        url(../../assets/images/leaves/strelitzia1.png) no-repeat bottom right /
+          24%;
+    }
+
+    .bamboo-cap-container {
+      padding-top: 100px;
+      margin-bottom: 141px;
+    }
+
+    .bamboo-cap-small-img {
+      display: initial;
+      margin-top: 9px;
+      height: 408px;
+    }
+
+    .bamboo-cap-text {
+      flex-basis: 454px;
+    }
+
+    .pets-container {
+      gap: 81px;
+    }
+
+    .pets-card {
+      background: none;
+      border: 1px solid var(--or3);
+    }
+  
+    .pets-card:hover {
+      border-color: transparent;
+    }
+
+    .pets-card-img {
+      width: 294px;
+    }
+
+    .card-bottom {
+      margin: 4px 14px 11px 16px;
+    }
+
+    .pets-button {
+      margin-bottom: 140px;
+    }
+
+    .pets-arrow-mobile-container {
+      gap: 171px;
+    }
+
+    .feed-a-friend {
+      padding: 30px 0 50px 0;
+    }
+
+    .friend-heading-first {
+      margin: 31px 0 23px 0;
+    }
+
+    .friend-subtitle {
+      margin-bottom: 21px;
+    }
+
+    .friend-subtitle,
+    .friend-text-bold,
+    .friend-text {
+      margin-left: 49px;
+      margin-right: 48px;
+    }
+
+    .friend-heading-second {
+      margin: 43px 0 42px 0;
+    }
+
+    .testimonials {
+      padding: 103px 0 140px 0;
+      background-size: 21%;
+      background-position: 101% 122%;
+    }
+
+    .testimonials-cards-container {
+      justify-content: space-between;
+      gap: unset;
+    }
+
+    .testimonials-card {
+      flex-basis: 293px;
+      padding-top: 10px;
+    }
+
+    .testimonials-slider {
+      width: 390px;
+      margin: 21px 12px 52px 0;
+    }
+  
+    .testimonials-slider::-webkit-slider-thumb {
+      width: 75px;
+    }
+  
+    .testimonials-slider::-moz-range-thumb {
+      width: 75px;
+    }
+  
+    .footer-center {
+      margin: 0 0 0 -7px;
+    }
+  
+    .footer-right {
+      margin-left: 89px;
+    }
+  }
+
   .header {
-    position: relative;
     z-index: 1;
-  }
-
-  .giant-panda {
-    background-size: 120%;
-  }
-
-  .giant-panda-heading {
-    margin: 43px 63px 41px 0;
-    font-size: 85px;
-  }
-
-  .giant-panda-circle {
-    width: 367px;
-    height: 367px;
-    bottom: 6px;
-    right: 84px;
-  }
-
-  .giant-panda-button {
-    margin: 0 107px 47px 0;
-  }
-
-  .flowers-bg {
-    background: url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat
-        bottom left,
-      url(../../assets/images/leaves/strelitzia1.png) no-repeat bottom right /
-        24%;
-  }
-
-  .bamboo-cap-container {
-    padding-top: 100px;
-    margin-bottom: 141px;
   }
 
   .bamboo-cap-img {
     display: none;
-  }
-
-  .bamboo-cap-small-img {
-    display: initial;
-    margin-top: 9px;
-    height: 408px;
-  }
-
-  .bamboo-cap-text {
-    flex-basis: 454px;
   }
 
   .bamboo-cap-paragraph_first {
@@ -66,10 +152,6 @@
     line-height: 22px;
   }
 
-  .pets-container {
-    gap: 81px;
-  }
-
   .pets-arrow {
     display: none;
   }
@@ -77,7 +159,6 @@
   .pets-arrow-mobile-container {
     display: flex;
     justify-content: center;
-    gap: 171px;
     flex-basis: 100%;
   }
 
@@ -93,28 +174,8 @@
     display: initial;
   }
 
-  .pets-card-img {
-    width: 294px;
-  }
-
-  .card-bottom {
-    margin: 4px 14px 11px 16px;
-  }
-
   .card-bottom_hover {
     padding: 0 10px;
-  }
-
-  .feed-a-friend {
-    padding: 30px 0 50px 0;
-  }
-
-  .friend-heading-first {
-    margin: 31px 0 23px 0;
-  }
-
-  .friend-subtitle {
-    margin-bottom: 21px;
   }
 
   .friend-text-bold {
@@ -122,25 +183,8 @@
     margin-bottom: 10px;
   }
 
-  .friend-subtitle,
-  .friend-text-bold,
-  .friend-text {
-    margin-left: 49px;
-    margin-right: 48px;
-  }
-
-  .friend-heading-second {
-    margin: 43px 0 42px 0;
-  }
-
   .friend-button {
     margin: 72px 0 50px 0;
-  }
-
-  .testimonials {
-    padding: 103px 0 140px 0;
-    background-size: 21%;
-    background-position: 101% 122%;
   }
 
   .testimonials-heading {
@@ -148,7 +192,6 @@
   }
 
   .testimonials-card {
-    flex-basis: 293px;
     padding-top: 10px;
   }
 
@@ -167,83 +210,13 @@
   .mila-card {
     display: none;
   }
-
-  .testimonials-slider {
-    width: 390px;
-    margin: 21px 12px 52px 0;
-  }
-
-  .testimonials-slider::-webkit-slider-thumb {
-    width: 75px;
-  }
-
-  .testimonials-slider::-moz-range-thumb {
-    width: 75px;
-  }
-
-  .footer-center {
-    margin: 0 0 0 -7px;
-  }
-
-  .footer-right {
-    margin-left: 89px;
-  }
 }
 
-@media (min-width: 641px) and (max-width: 1000px) {
-  .pets-card {
-    background: none;
-    border: 1px solid var(--or3);
-  }
-
-  .pets-card:hover {
-    border-color: transparent;
-  }
-
-  .pets-button {
-    margin-bottom: 140px;
-  }
-}
-
-@media (max-width: 890px) {
+@media (max-width: 999px) {
   .giant-panda {
     background-size: cover;
   }
 
-  .bamboo-cap-small-img {
-    display: none;
-  }
-
-  .pets-cards-container {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 790px) {
-  .example-cards {
-    position: relative;
-  }
-
-  .example-card-arrow {
-    display: none;
-  }
-
-  .example-card-arrow-mobile {
-    display: initial;
-    position: absolute;
-    top: -16px;
-  }
-
-  .arrow-mobile-first {
-    left: 23%;
-  }
-
-  .arrow-mobile-second {
-    right: 26%;
-  }
-}
-
-@media (max-width: 640px) {
   .giant-panda-heading {
     font-size: 54px;
     margin: 84px 0 0 0;
@@ -331,6 +304,7 @@
 
   .pets-button {
     background: var(--orange);
+    margin-bottom: 100px;
   }
 
   .feed-a-friend {
@@ -364,10 +338,29 @@
   }
 
   .example-cards {
+    position: relative;
     margin-left: 20px;
     margin-right: 32px;
     justify-content: space-between;
     gap: initial;
+  }
+
+  .example-card-arrow {
+    display: none;
+  }
+
+  .example-card-arrow-mobile {
+    display: initial;
+    position: absolute;
+    top: -16px;
+  }
+
+  .arrow-mobile-first {
+    left: 23%;
+  }
+
+  .arrow-mobile-second {
+    right: 26%;
   }
 
   .friend-button {

@@ -1,48 +1,53 @@
-@media (max-width: 1190px) {
-  .giant-panda {
-    height: 390px;
-    background-size: 157%;
-    background-position: 28% 50%;
-  }
+@media (max-width: 1599px) {
+  @media (min-width: 1000px) {
+    .giant-panda {
+      height: 390px;
+      background-size: 157%;
+      background-position: 28% 50%;
+    }
 
-  .donation {
-    padding: 40px 0 31px 0;
-  }
+    .donation {
+      padding: 40px 0 31px 0;
+    }
 
-  .donation-info {
-    margin-bottom: 42px;
+    .donation-info {
+      margin-bottom: 42px;
+    }
+
+    .donation-heading-first {
+      line-height: 130%;
+    }
+
+    .donation-text {
+      margin-top: 30px;
+    }
+
+    .donation-card {
+      padding: 22px 47px 30px 47px;
+    }
+
+    .card-heading {
+      margin-bottom: 11px;
+    }
+
+    .amount-text {
+      margin-left: 18px;
+    }
+
+    .money-radio-buttons {
+      width: 810px;
+      margin: 0 auto;
+      padding: 8px 10px 8px 12px;
+    }
+
+    .money-radio-labels {
+      justify-content: flex-end;
+      margin-right: 8px;
+    }
   }
 
   .donation-heading-first {
     max-width: 778px;
-    line-height: 47px;
-  }
-
-  .donation-text {
-    margin-top: 30px;
-  }
-
-  .donation-card {
-    padding: 22px 47px 30px 47px;
-  }
-
-  .card-heading {
-    margin-bottom: 11px;
-  }
-
-  .amount-text {
-    margin-left: 18px;
-  }
-
-  .money-radio-buttons {
-    width: 810px;
-    margin: 0 auto;
-    padding: 8px 10px 8px 12px;
-  }
-
-  .money-radio-labels {
-    justify-content: flex-end;
-    margin-right: 8px;
   }
 
   .dollars-5000-selector,
@@ -59,28 +64,7 @@
   }
 }
 
-@media (max-width: 890px) {
-  .money-radio-buttons {
-    width: auto;
-    max-width: 810px;
-  }
-
-  .dollars-2000-selector,
-  .dollars-2000 {
-    display: none;
-  }
-
-  .dollars-1000-selector,
-  .dollars-1000 {
-    display: none;
-  }
-
-  .money-radio-labels {
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 640px) {
+@media (max-width: 999px) {
   .header {
     z-index: 1;
   }
@@ -126,6 +110,8 @@
   }
 
   .money-radio-buttons {
+    width: auto;
+    max-width: 810px;
     padding: 8px 34px 8px 34px;
   }
 
@@ -134,7 +120,18 @@
     bottom: 49%;
   }
 
+  .dollars-2000-selector,
+  .dollars-2000 {
+    display: none;
+  }
+
+  .dollars-1000-selector,
+  .dollars-1000 {
+    display: none;
+  }
+
   .money-radio-labels {
+    justify-content: space-between;
     padding: 0 22px 0 18px;
     margin-right: 0;
   }

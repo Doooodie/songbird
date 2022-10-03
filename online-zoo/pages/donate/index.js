@@ -9,9 +9,11 @@ const dollars100Selector = radioSelections[5];
 const dollars100Icon = radioDollarIcons[5];
 const dollars100Text = radioTexts[5];
 
-window.onload = alert(
-  'Радиокнопки "по умолчанию" соответствуют макетам, если обновить страницу с нужным viewport (<891px)'
-);
+function alertUser() {
+  alert(
+    'Радиокнопки "по умолчанию" соответствуют макетам, если обновить страницу с нужным viewport (<891px)'
+  );
+}
 
 if (document.documentElement.clientWidth < 891) {
   dollars1000Selector.checked = false;
