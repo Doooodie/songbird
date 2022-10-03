@@ -55,8 +55,17 @@
   justify-content: space-between;
 }
 
-.bamboo-cap-img {
+.bamboo-cap-img,
+.bamboo-cap-small-img {
   backdrop-filter: blur(2px);
+}
+
+.bamboo-cap-small-img {
+  display: none;
+}
+
+.bamboo-mobile-button {
+  display: none;
 }
 
 .bamboo-cap-text {
@@ -71,7 +80,7 @@
 }
 
 .bamboo-cap-heading {
-  line-height: 58px;
+  line-height: 120%;
   font-size: 48px;
   margin-bottom: 20px;
 }
@@ -103,7 +112,8 @@
   gap: 20px;
 }
 
-.pets-arrow {
+.pets-arrow,
+.pets-arrow-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,13 +126,18 @@
   cursor: pointer;
 }
 
-.pets-arrow:hover {
+.pets-arrow:hover,
+.pets-arrow-mobile:hover {
   background: var(--green);
 }
 
 .pets-arrow-left,
 .pets-arrow-right {
   filter: invert(100%);
+}
+
+.pets-arrow-mobile-container {
+  display: none;
 }
 
 .pets-cards-container {
@@ -142,6 +157,10 @@
 
 .pets-card_hover {
   background: none;
+}
+
+.alligator-card {
+  display: none;
 }
 
 .pets-card-img {
@@ -289,6 +308,10 @@
   margin-bottom: 78px;
 }
 
+.example-card-arrow-mobile {
+  display: none;
+}
+
 .friend-button {
   margin: 64px 0 59px 0;
   padding: 18px 73px;
@@ -317,17 +340,21 @@
 
 .testimonials-cards-container {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 
 .testimonials-card {
   flex-basis: 268px;
-  flex-shrink: 0;
   padding: 15px 15px 16px 11px;
   border: 4px solid transparent;
   border-radius: 20px;
   background: linear-gradient(var(--light-gray), var(--light-gray)) padding-box,
     var(--pink-grad) border-box;
+}
+
+.oska-card {
+  display: none;
 }
 
 .testimonials-card-top {

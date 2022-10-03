@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../../assets/styles/modern-normalize.css" />
     <link rel="stylesheet" href="../../assets/styles/global.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../assets/styles/responsive-global.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>Donate</title>
   </head>
   <body>
@@ -40,9 +42,9 @@
               <a href="#" class="header-link">Zoos</a>
             </li>
             <li class="header-donate">
-              <a href="#" class="header-link header-donate link-selected"
-                >Donate</a
-              >
+              <a href="#" class="header-link header-donate-link link-selected">
+                Donate
+              </a>
             </li>
             <li class="header-contacts">
               <a href="#" class="header-link">Contact us</a>
@@ -57,6 +59,19 @@
               </a>
             </li>
           </ul>
+          <div class="header-container-mobile">
+            <div class="header-logo">
+              <a href="../../index.html" class="header-link logo-container">
+                <h1 class="logo-text">PetStory<br />online</h1>
+                <img
+                  src="../../assets/icons/misc/bamboo_icon.svg"
+                  alt="bamboo icon"
+                  class="bamboo-icon"
+                />
+              </a>
+            </div>
+            <div class="header-burger"></div>
+          </div>
         </nav>
       </header>
 
@@ -111,55 +126,55 @@
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-5000-selector"
                     id="5000-dollars"
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-2000-selector"
                     id="2000-dollars"
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-1000-selector"
                     id="1000-dollars"
                     checked
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-500-selector"
                     id="500-dollars"
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-250-selector"
                     id="250-dollars"
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-100-selector"
                     id="100-dollars"
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-50-selector"
                     id="50-dollars"
                   />
                   <input
                     type="radio"
                     name="radio-selection"
-                    class="radio-selection"
+                    class="radio-selection dollars-25-selector"
                     id="25-dollars"
                   />
                 </div>
                 <div class="money-radio-labels">
-                  <label for="5000-dollars" class="radio-label">
+                  <label for="5000-dollars" class="radio-label dollars-5000">
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
@@ -167,7 +182,7 @@
                     />
                     <span class="radio-text">5000</span>
                   </label>
-                  <label for="2000-dollars" class="radio-label">
+                  <label for="2000-dollars" class="radio-label dollars-2000">
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
@@ -175,7 +190,7 @@
                     />
                     <span class="radio-text">2000</span>
                   </label>
-                  <label for="1000-dollars" class="radio-label">
+                  <label for="1000-dollars" class="radio-label dollars-1000">
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
@@ -183,7 +198,7 @@
                     />
                     <span class="radio-text radio-text_checked">1000</span>
                   </label>
-                  <label for="500-dollars" class="radio-label">
+                  <label for="500-dollars" class="radio-label dollars-500">
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
@@ -372,6 +387,156 @@
               </p>
             </div>
           </div>
+        </div>
+
+        <div class="container footer-container-tablet">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <a
+                href="../../index.html"
+                class="footer-logo-link logo-container"
+              >
+                <p class="logo-text">PetStory<br />online</p>
+                <img
+                  src="../../assets/icons/misc/bamboo_icon.svg"
+                  alt="bamboo icon"
+                  class="bamboo-icon"
+                />
+              </a>
+            </div>
+            <a href="#" class="button square-button footer-donate-button">
+              DONATE FOR VOLUNTEERS
+            </a>
+            <ul class="footer-center-container">
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link link-selected">About</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Map</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Zoos</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-socials">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer-social-container"
+              >
+                <i class="social-icon social-youtube"></i>
+              </a>
+            </div>
+            <div class="footer-right-bottom">
+              <p class="footer-right-bottom-text">
+                Designed by Alisa Samborskaya
+              </p>
+              <p class="footer-right-bottom-text">
+                ©RSSchool & ©Yem Digital 2021
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container footer-container-mobile">
+          <div class="footer-logo">
+            <a href="../../index.html" class="footer-logo-link logo-container">
+              <p class="logo-text">PetStory online</p>
+              <img
+                src="../../assets/icons/misc/bamboo_icon.svg"
+                alt="bamboo icon"
+                class="bamboo-icon"
+              />
+            </a>
+          </div>
+
+          <div class="footer-socials">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer-social-container"
+            >
+              <i class="social-icon social-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer-social-container"
+            >
+              <i class="social-icon social-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer-social-container"
+            >
+              <i class="social-icon social-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="footer-social-container"
+            >
+              <i class="social-icon social-youtube"></i>
+            </a>
+          </div>
+
+          <a href="#" class="button square-button footer-donate-button">
+            DONATE FOR VOLUNTEERS
+          </a>
+
+          <div class="footer-right-bottom">
+            <p class="footer-right-bottom-text">
+              Designed by Alisa Samborskaya
+            </p>
+            <p class="footer-right-bottom-text">
+              ©RSSchool & ©Yem Digital 2021
+            </p>
+          </div>
+
+          <nav class="footer-center">
+            <ul class="footer-center-container">
+              <li class="footer-center-list">
+                <a href="../../index.html" class="footer-center-link">About</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Map</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Zoos</a>
+              </li>
+              <li class="footer-center-list">
+                <a href="#" class="footer-center-link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </footer>
     </div>
