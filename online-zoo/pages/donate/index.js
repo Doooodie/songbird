@@ -11,11 +11,14 @@ const dollars100Text = radioTexts[5];
 
 function alertUser() {
   alert(
-    'Радиокнопки "по умолчанию" соответствуют макетам, если обновить страницу с нужным viewport (<891px)'
+    `Радиокнопки "по умолчанию" соответствуют макетам, если обновить страницу с нужным viewport
+    (<1000px акцент на $100, >=1000px акцент на $1000)`
   );
 }
 
-if (document.documentElement.clientWidth < 891) {
+window.onload = alertUser;
+
+if (document.documentElement.clientWidth < 1000) {
   dollars1000Selector.checked = false;
   dollars1000Icon.classList.remove('radio-dollar-icon_checked');
   dollars1000Text.classList.remove('radio-text_checked');
