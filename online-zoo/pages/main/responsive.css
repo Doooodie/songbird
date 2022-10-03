@@ -54,7 +54,7 @@
       background: none;
       border: 1px solid var(--or3);
     }
-  
+
     .pets-card:hover {
       border-color: transparent;
     }
@@ -98,6 +98,10 @@
       margin: 43px 0 42px 0;
     }
 
+    .friend-button {
+      margin: 72px 0 50px 0;
+    }
+
     .testimonials {
       padding: 103px 0 140px 0;
       background-size: 21%;
@@ -118,21 +122,41 @@
       width: 390px;
       margin: 21px 12px 52px 0;
     }
-  
+
     .testimonials-slider::-webkit-slider-thumb {
       width: 75px;
     }
-  
+
     .testimonials-slider::-moz-range-thumb {
       width: 75px;
     }
-  
+
     .footer-center {
       margin: 0 0 0 -7px;
     }
-  
+
     .footer-right {
       margin-left: 89px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .pets-arrow-mobile-container {
+      display: flex;
+      justify-content: center;
+      flex-basis: 100%;
+    }
+
+    .pets-arrow-mobile {
+      margin: -6px 0;
+    }
+
+    .testimonials-heading {
+      margin: 0 0 33px 0;
+    }
+
+    .testimonials-card {
+      padding-top: 10px;
     }
   }
 
@@ -156,16 +180,6 @@
     display: none;
   }
 
-  .pets-arrow-mobile-container {
-    display: flex;
-    justify-content: center;
-    flex-basis: 100%;
-  }
-
-  .pets-arrow-mobile {
-    margin: -6px 0;
-  }
-
   .cheetah-card {
     display: none;
   }
@@ -181,18 +195,6 @@
   .friend-text-bold {
     line-height: 21px;
     margin-bottom: 10px;
-  }
-
-  .friend-button {
-    margin: 72px 0 50px 0;
-  }
-
-  .testimonials-heading {
-    margin: 0 0 33px 0;
-  }
-
-  .testimonials-card {
-    padding-top: 10px;
   }
 
   .testimonials-card-bottom {
@@ -213,59 +215,123 @@
 }
 
 @media (max-width: 999px) {
-  .giant-panda {
-    background-size: cover;
-  }
+  @media (min-width: 640px) {
+    .giant-panda {
+      background-size: cover;
+    }
 
-  .giant-panda-heading {
-    font-size: 54px;
-    margin: 84px 0 0 0;
-  }
+    .giant-panda-heading {
+      font-size: 54px;
+      margin: 84px 0 0 0;
+    }
 
-  .giant-panda-circle {
-    width: 238px;
-    height: 238px;
-    bottom: 6px;
-    right: 52px;
-  }
+    .giant-panda-circle {
+      width: 238px;
+      height: 238px;
+      bottom: 6px;
+      right: 52px;
+    }
 
-  .giant-panda-button {
-    align-self: flex-start;
-    margin: -8px 0 40px 0;
-  }
+    .giant-panda-button {
+      align-self: flex-start;
+      margin: -8px 0 40px 0;
+    }
 
-  .flowers-bg {
-    background: url(../../assets/images/leaves/flower_foto1.png) no-repeat 106%
-        0px / 24.5%,
-      url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat -14% 100% /
-        31%,
-      url(../../assets/images/leaves/strelitzia1.png) no-repeat 100% 100% / 27%;
-  }
+    .flowers-bg {
+      background: url(../../assets/images/leaves/flower_foto1.png) no-repeat
+          106% 0px / 24.5%,
+        url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat -14% 100% /
+          31%,
+        url(../../assets/images/leaves/strelitzia1.png) no-repeat 100% 100% /
+          27%;
+    }
 
-  .bamboo-cap-container {
-    padding-top: 60px;
-    margin-bottom: 80px;
-  }
+    .bamboo-cap-container {
+      padding-top: 60px;
+      margin-bottom: 80px;
+    }
 
-  .bamboo-cap-text {
-    flex-basis: 495px;
-  }
+    .bamboo-cap-text {
+      flex-basis: 495px;
+    }
 
-  .bamboo-cap-heading {
-    margin-left: 4px;
-  }
+    .bamboo-cap-heading {
+      margin-left: 4px;
+    }
 
-  .bamboo-cap-subtitle {
-    margin: 31px 0 21px 4px;
-  }
+    .bamboo-cap-subtitle {
+      margin: 31px 0 21px 4px;
+    }
 
-  .pets-container {
-    gap: 60px;
-  }
+    .pets-container {
+      gap: 60px;
+    }
 
-  .pets-cards-container {
-    justify-content: space-between;
-    row-gap: 21px;
+    .pets-cards-container {
+      justify-content: space-between;
+      row-gap: 21px;
+    }
+
+    .friend-container {
+      max-width: 100%;
+    }
+
+    .friend-heading-first {
+      margin: 12px 0 22px 0;
+      font-size: 42px;
+    }
+
+    .friend-subtitle {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .friend-subtitle,
+    .friend-text-bold,
+    .friend-text {
+      margin-left: 19px;
+      margin-right: 19px;
+    }
+
+    .friend-heading-second {
+      margin: 33px 0 23px 0;
+    }
+
+    .example-cards {
+      margin-left: 20px;
+      margin-right: 32px;
+    }
+
+    .friend-button {
+      margin: 42px 0 60px 0;
+    }
+
+    .example-card-arrow-mobile {
+      top: -16px;
+    }
+
+    .arrow-mobile-first {
+      left: 23%;
+    }
+
+    .arrow-mobile-second {
+      right: 26%;
+    }
+
+    .testimonials {
+      padding: 64px 0 80px 0;
+      background-size: 20%;
+      background-position: 102% 116%;
+    }
+
+    .testimonials-card {
+      padding-top: 9px;
+      padding-left: 8px;
+    }
+
+    .testimonials-button {
+      margin-top: 40px;
+    }
   }
 
   .gorilla-card,
@@ -304,7 +370,6 @@
 
   .pets-button {
     background: var(--orange);
-    margin-bottom: 100px;
   }
 
   .feed-a-friend {
@@ -313,34 +378,10 @@
 
   .friend-container {
     margin-top: 19px;
-    max-width: 100%;
-  }
-
-  .friend-heading-first {
-    margin: 11px 0 22px 0;
-    font-size: 42px;
-  }
-
-  .friend-subtitle {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  .friend-subtitle,
-  .friend-text-bold,
-  .friend-text {
-    margin-left: 19px;
-    margin-right: 19px;
-  }
-
-  .friend-heading-second {
-    margin: 33px 0 23px 0;
   }
 
   .example-cards {
     position: relative;
-    margin-left: 20px;
-    margin-right: 32px;
     justify-content: space-between;
     gap: initial;
   }
@@ -352,25 +393,6 @@
   .example-card-arrow-mobile {
     display: initial;
     position: absolute;
-    top: -16px;
-  }
-
-  .arrow-mobile-first {
-    left: 23%;
-  }
-
-  .arrow-mobile-second {
-    right: 26%;
-  }
-
-  .friend-button {
-    margin: 42px 0 60px 0;
-  }
-
-  .testimonials {
-    padding: 64px 0 80px 0;
-    background-size: 20%;
-    background-position: 102% 116%;
   }
 
   .testimonials-cards-container {
@@ -393,8 +415,162 @@
 
   .testimonials-button {
     align-self: auto;
-    margin-top: 40px;
     width: 240px;
     background: var(--orange);
+  }
+}
+
+@media (max-width: 639px) {
+  .giant-panda {
+    background-size: 120%;
+  }
+
+  .giant-panda-heading {
+    font-size: 28px;
+    margin: 75px 1px 41px 0;
+  }
+
+  .giant-panda-circle {
+    width: 119px;
+    height: 119px;
+    bottom: 5px;
+    right: 27px;
+  }
+
+  .giant-panda-button {
+    display: none;
+  }
+
+  .flowers-bg {
+    background: url(../../assets/images/leaves/flower_foto1.png) no-repeat 117%
+        2% / 23%,
+      url(../../assets/images/leaves/palm_foto-mobile.png) no-repeat -5% 100% / 22%,
+      url(../../assets/images/leaves/strelitzia1.png) no-repeat 108% 100% / 27%;
+  }
+
+  .bamboo-cap-container {
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .bamboo-mobile-button {
+    display: initial;
+    margin-bottom: 31px;
+  }
+
+  .bamboo-cap-text {
+    flex-basis: auto;
+  }
+
+  .bamboo-cap-heading {
+    font-size: 24px;
+    margin-bottom: 9px;
+  }
+
+  .bamboo-cap-subtitle {
+    margin: 21px 0 11px 1px;
+  }
+
+  .pets-container {
+    gap: 20px;
+  }
+
+  .pets-cards-container {
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .pets-button {
+    margin-bottom: 60px;
+  }
+
+  .example-cards {
+    flex-direction: column;
+  }
+
+  .friend-heading-first {
+    margin: 21px 0 12px 0;
+    font-size: 24px;
+  }
+
+  .friend-subtitle {
+    margin: 0 0 20px -3px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 120%;
+  }
+
+  .friend-text-bold,
+  .friend-text {
+    display: none;
+  }
+
+  .friend-heading-second {
+    font-size: 24px;
+    margin: 1px 0 20px 0;
+  }
+
+  .example-cards {
+    align-items: center;
+    gap: 42px;
+  }
+
+  .example-card-container {
+    max-width: 168px;
+  }
+
+  .example-card-description {
+    margin-top: 10px;
+  }
+
+  .monkey-card {
+    margin-top: -13px;
+  }
+
+  .friend-button {
+    margin: 39px 0 40px 0;
+  }
+
+  .example-card-arrow-mobile {
+    right: -61px;
+    transform: rotate(85deg);
+  }
+
+  .arrow-mobile-first {
+    top: 27%;
+  }
+
+  .arrow-mobile-second {
+    top: 62%;
+  }
+
+  .testimonials {
+    padding: 31px 0 60px 0;
+    background-size: 19%;
+    background-position: 101% 107%;
+  }
+
+  .testimonials-heading {
+    margin: 0 0 21px 0;
+    font-size: 24px;
+  }
+
+  .testimonials-card {
+    border-width: 2px;
+    padding-top: 8px;
+    padding-left: 11px;
+  }
+
+  .testimonials-card-top {
+    gap: 6px;
+  }
+
+  .testimonials-card-bottom {
+    margin-left: 6px;
+  }
+
+  .testimonials-button {
+    margin-top: 30px;
   }
 }

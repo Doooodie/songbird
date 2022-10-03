@@ -64,6 +64,10 @@
   display: none;
 }
 
+.bamboo-mobile-button {
+  display: none;
+}
+
 .bamboo-cap-text {
   flex-basis: 465px;
   color: var(--black-blue);
@@ -76,7 +80,7 @@
 }
 
 .bamboo-cap-heading {
-  line-height: 58px;
+  line-height: 120%;
   font-size: 48px;
   margin-bottom: 20px;
 }
