@@ -122,6 +122,11 @@
     height: 13px;
   }
 
+  .header-link {
+    font-weight: 400;
+    line-height: 140%;
+  }
+
   .footer-container {
     display: none;
   }

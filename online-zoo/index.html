@@ -59,18 +59,51 @@
               </a>
             </li>
           </ul>
-          <div class="header-container-mobile">
-            <div class="header-logo">
-              <a href="#" class="header-link logo-container">
-                <h1 class="logo-text">PetStory<br />online</h1>
-                <img
-                  src="./assets/icons/misc/bamboo_icon.svg"
-                  alt="bamboo icon"
-                  class="bamboo-icon"
-                />
-              </a>
+
+          <div class="header-mobile">
+            <div class="header-container-mobile">
+              <div class="header-logo">
+                <a href="#" class="header-link logo-container">
+                  <h1 class="logo-text">PetStory<br />online</h1>
+                  <img
+                    src="./assets/icons/misc/bamboo_icon.svg"
+                    alt="bamboo icon"
+                    class="bamboo-icon"
+                  />
+                </a>
+              </div>
+              <div class="header-burger"></div>
             </div>
-            <div class="header-burger"></div>
+            <div class="header-bottom">
+              <ul class="header-bottom-container">
+                <li class="header-about">
+                  <a href="#" class="header-link link-selected">About</a>
+                </li>
+                <li class="header-map">
+                  <a href="#" class="header-link">Map</a>
+                </li>
+                <li class="header-zoos">
+                  <a href="#" class="header-link">Zoos</a>
+                </li>
+                <li class="header-donate">
+                  <a href="./pages/donate/index.html" class="header-link">
+                    Donate
+                  </a>
+                </li>
+                <li class="header-contacts">
+                  <a href="#" class="header-link">Contact us</a>
+                </li>
+                <li class="header-designed-by">
+                  <a
+                    href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+                    target="_blank"
+                    class="header-link"
+                  >
+                    Designed by &copy;
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -666,10 +699,7 @@
                   pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                   required
                 />
-                <button
-                  type="submit"
-                  class="subscription-submit"
-                >
+                <button type="submit" class="subscription-submit">
                   Submit
                 </button>
               </div>
@@ -841,5 +871,6 @@
     </div>
 
     <script src="./pages/main/index.js"></script>
+    <script src="./assets/scripts/burger-menu.js"></script>
   </body>
 </html>

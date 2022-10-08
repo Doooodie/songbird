@@ -97,6 +97,15 @@ html {
   margin: 0 auto;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
 .header {
   background: var(--black);
   backdrop-filter: blur(2px);
@@ -112,11 +121,27 @@ html {
 
 .header-container,
 .header-container-mobile {
-  margin-block: 0;
-  padding-inline-start: 0;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-bottom {
+  display: none;
+}
+
+.header-container,
+.header-container-mobile,
+.header-bottom-container {
+  margin-block: 0;
+  padding-inline-start: 0;
   list-style-type: none;
+}
+
+.header-bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0 40px 0;
 }
 
 .header-link {
@@ -177,9 +202,13 @@ html {
 
 .header-burger {
   cursor: pointer;
-  width: 18px;
-  height: 10px;
-  background: url(../icons/menu/burger_menu.svg);
+  width: 22px;
+  height: 22px;
+  background: url(../icons/menu/burger_menu.svg) no-repeat center;
+}
+
+.burger-open {
+  background-image: url(../icons/menu/active_menu.svg);
 }
 
 .footer {
