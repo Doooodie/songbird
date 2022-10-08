@@ -140,7 +140,6 @@
                     name="radio-selection"
                     class="radio-selection dollars-1000-selector"
                     id="1000-dollars"
-                    checked
                   />
                   <input
                     type="radio"
@@ -159,6 +158,7 @@
                     name="radio-selection"
                     class="radio-selection dollars-100-selector"
                     id="100-dollars"
+                    checked
                   />
                   <input
                     type="radio"
@@ -194,9 +194,9 @@
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
-                      class="radio-dollar-icon radio-dollar-icon_checked"
+                      class="radio-dollar-icon"
                     />
-                    <span class="radio-text radio-text_checked">1000</span>
+                    <span class="radio-text">1000</span>
                   </label>
                   <label for="500-dollars" class="radio-label dollars-500">
                     <img
@@ -218,9 +218,9 @@
                     <img
                       src="../../assets/icons/misc/dollar_icon.svg"
                       alt="dollar icon"
-                      class="radio-dollar-icon"
+                      class="radio-dollar-icon radio-dollar-icon_checked"
                     />
-                    <span class="radio-text">100</span>
+                    <span class="radio-text radio-text_checked">100</span>
                   </label>
                   <label for="50-dollars" class="radio-label dollars-50">
                     <img
@@ -366,12 +366,13 @@
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  class="subscription-email email-default"
+                  class="subscription-email"
                   id="subscription-email"
+                  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                   required
                 />
                 <button
-                  type="button"
+                  type="submit"
                   class="subscription-submit submit-default"
                 >
                   Submit
@@ -542,6 +543,5 @@
     </div>
 
     <script src="index.js"></script>
-    <script src="../../assets/scripts/email-validator.js"></script>
   </body>
 </html>

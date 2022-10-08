@@ -661,13 +661,14 @@
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  class="subscription-email email-default"
+                  class="subscription-email"
                   id="subscription-email"
+                  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                   required
                 />
                 <button
-                  type="button"
-                  class="subscription-submit submit-default"
+                  type="submit"
+                  class="subscription-submit"
                 >
                   Submit
                 </button>
@@ -840,6 +841,5 @@
     </div>
 
     <script src="./pages/main/index.js"></script>
-    <script src="./assets/scripts/email-validator.js"></script>
   </body>
 </html>

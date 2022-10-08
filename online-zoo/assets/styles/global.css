@@ -334,22 +334,22 @@ html {
   outline: none;
 }
 
-.email-default {
-  background: linear-gradient(var(--magenta-dark), var(--magenta-dark))
-      padding-box,
-    var(--orange) border-box;
-}
-
-.email-active {
+.subscription-email:valid {
   background: linear-gradient(var(--magenta-dark), var(--magenta-dark))
       padding-box,
     var(--green) border-box;
 }
 
-.email-mistake {
+.subscription-email:invalid {
   background: linear-gradient(var(--magenta-dark), var(--magenta-dark))
       padding-box,
     var(--red) border-box;
+}
+
+.subscription-email:placeholder-shown {
+  background: linear-gradient(var(--magenta-dark), var(--magenta-dark))
+      padding-box,
+    var(--orange) border-box;
 }
 
 .subscription-email::placeholder {
@@ -365,19 +365,19 @@ html {
   background: var(--light-gray);
 }
 
-.submit-default {
-  color: var(--black);
-  border: 1px solid var(--black-blue);
-}
-
-.submit-active {
+.subscription-email:valid + .subscription-submit {
   color: var(--green);
   border: 1px solid var(--green);
 }
 
-.sumbit-mistake {
+.subscription-email:invalid + .subscription-submit {
   color: var(--red);
   border: 1px solid var(--red);
+}
+
+.subscription-email:placeholder-shown + .subscription-submit {
+  color: var(--black);
+  border: 1px solid var(--black-blue);
 }
 
 .footer-right-bottom {

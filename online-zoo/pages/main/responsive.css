@@ -188,7 +188,7 @@
     display: initial;
   }
 
-  .card-bottom_hover {
+  .pets-card:hover > .card-bottom {
     padding: 0 10px;
   }
 

@@ -216,6 +216,7 @@
     no-repeat;
   border: 1px solid var(--cyan-blue-verylight);
   border-radius: 2px;
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -225,6 +226,7 @@
 
 .another-amount::-webkit-outer-spin-button,
 .another-amount::-webkit-inner-spin-button {
+  appearance: none;
   -webkit-appearance: none;
   margin: 0;
 }

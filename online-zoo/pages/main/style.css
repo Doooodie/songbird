@@ -155,7 +155,7 @@
   transition: all 0.5s;
 }
 
-.pets-card_hover {
+.pets-card:hover {
   background: none;
 }
 
@@ -169,7 +169,7 @@
   transition: all 0.5s;
 }
 
-.pets-card-img_hover {
+.pets-card:hover > .pets-card-img {
   border-radius: 5px;
   transform: scale(1.03);
 }
@@ -181,7 +181,7 @@
   transition: all 0.5s;
 }
 
-.card-bottom_hover {
+.pets-card:hover > .card-bottom {
   transform: translate(0px, -60px);
   margin: 0;
   padding: 5px 10px;
@@ -206,8 +206,8 @@
   font-size: 15px;
 }
 
-.card-description-heading_hover,
-.card-description-text_hover {
+.pets-card:hover .card-description-heading,
+.pets-card:hover .card-description-text {
   color: var(--white);
 }
 
