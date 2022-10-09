@@ -108,11 +108,6 @@
       background-position: 101% 122%;
     }
 
-    .testimonials-cards-container {
-      justify-content: space-between;
-      gap: unset;
-    }
-
     .testimonials-card {
       flex-basis: 293px;
       padding-top: 10px;
@@ -199,18 +194,6 @@
 
   .testimonials-card-bottom {
     margin-top: 12px;
-  }
-
-  .oskar-card {
-    display: none;
-  }
-
-  .oska-card {
-    display: initial;
-  }
-
-  .mila-card {
-    display: none;
   }
 }
 
@@ -398,6 +381,7 @@
   .testimonials-cards-container {
     flex-direction: column;
     gap: 15px;
+    max-height: 357px;
   }
 
   .testimonials-card {
