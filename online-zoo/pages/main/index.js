@@ -1,3 +1,9 @@
+import {
+  wrapper,
+  overlay,
+  burgerBtn,
+} from '../../assets/scripts/burger-menu.js';
+
 const testimonialsCard = document.querySelectorAll('.testimonials-card');
 const testimonialsSlider = document.querySelector('.testimonials-slider');
 
@@ -14,11 +20,46 @@ testimonialsSlider.oninput = function () {
   }
 };
 
-window.onresize = function () {
+function popup() {
+  const card = this.cloneNode(true);
+  const closeBtn = burgerBtn.cloneNode(true);
+  const cardTop = card.querySelector('.testimonials-card-top');
+
+  document.body.style.overflow = 'hidden';
+  overlay.style.zIndex = '2';
+  card.classList.add('testimonials-card-popup');
+  closeBtn.classList.add('testimonials-card-button');
+
+  cardTop.append(closeBtn);
+  wrapper.prepend(overlay);
+  overlay.after(card);
+
+  const closePopup = function () {
+    document.body.style.overflow = '';
+    overlay.style.zIndex = '';
+    overlay.remove();
+    card.remove();
+  };
+
+  closeBtn.onclick = closePopup;
+  overlay.onclick = closePopup;
+}
+
+window.onload = function () {
   if (document.documentElement.clientWidth < 1000) {
     testimonialsCard.forEach(card => {
-      card.style.transform = `translateX(0px)`;
+      card.addEventListener('click', popup);
     });
-    testimonialsSlider.value = 0;
+  }
+};
+
+window.onresize = function () {
+  if (
+    (document.documentElement.clientWidth > 1550 &&
+      document.documentElement.clientWidth < 1600) ||
+    (document.documentElement.clientWidth > 950 &&
+      document.documentElement.clientWidth < 1000)
+  ) {
+    location.reload();
   }
 };
