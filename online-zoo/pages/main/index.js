@@ -55,17 +55,19 @@ function slideLeft() {
       petsArrowsRight.forEach(arrow => {
         arrow.removeEventListener('click', slideRight);
       });
+      setTimeout(() => {
+        petsArrowsLeft.forEach(arrow => {
+          arrow.addEventListener('click', slideLeft);
+        });
+        petsArrowsRight.forEach(arrow => {
+          arrow.addEventListener('click', slideRight);
+        });
+      }, 1000);
     });
 
     petsRows[i].addEventListener('transitionend', event => {
       newRows[i].style.transform = `translateX(0)`;
       event.target.remove();
-      petsArrowsLeft.forEach(arrow => {
-        arrow.addEventListener('click', slideLeft);
-      });
-      petsArrowsRight.forEach(arrow => {
-        arrow.addEventListener('click', slideRight);
-      });
     });
   });
 
@@ -106,17 +108,19 @@ function slideRight() {
       petsArrowsRight.forEach(arrow => {
         arrow.removeEventListener('click', slideRight);
       });
+      setTimeout(() => {
+        petsArrowsLeft.forEach(arrow => {
+          arrow.addEventListener('click', slideLeft);
+        });
+        petsArrowsRight.forEach(arrow => {
+          arrow.addEventListener('click', slideRight);
+        });
+      }, 1000);
     });
 
     petsRows[i].addEventListener('transitionend', event => {
       newRows[i].style.transform = `translateX(0)`;
       event.target.remove();
-      petsArrowsLeft.forEach(arrow => {
-        arrow.addEventListener('click', slideLeft);
-      });
-      petsArrowsRight.forEach(arrow => {
-        arrow.addEventListener('click', slideRight);
-      });
     });
   });
 
@@ -170,11 +174,11 @@ function popup() {
 }
 
 window.onload = function () {
-  alert(`
-  Для удобства при брейкпойнтах страница перезагружается сама.
-  Если не нравится - пишем в консоли девтулзов: "window.onresize = null" и перезагружаем страницу сами :)
-  Если не нравится так сильно, что хочется снизить баллы - стучим в дискорд, быстренько уберу :)
-  `);
+  // alert(`
+  // Для удобства при брейкпойнтах страница перезагружается сама.
+  // Если не нравится - пишем в консоли девтулзов: "window.onresize = null" и перезагружаем страницу сами :)
+  // Если не нравится так сильно, что хочется снизить баллы - стучим в дискорд, быстренько уберу :)
+  // `);
 
   if (document.documentElement.clientWidth < 1000) {
     testimonialsCard.forEach(card => {
