@@ -147,6 +147,17 @@
   row-gap: 20px;
 }
 
+.pets-row-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.pets-cards-row {
+  display: flex;
+  gap: 28px;
+  transition: transform 0.5s;
+}
+
 .pets-card {
   border: 1px solid transparent;
   border-radius: 5px;
@@ -156,10 +167,6 @@
 
 .pets-card:hover {
   background: none;
-}
-
-.alligator-card {
-  display: none;
 }
 
 .pets-card-img {

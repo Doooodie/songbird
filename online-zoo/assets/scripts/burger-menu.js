@@ -20,4 +20,4 @@ function switchBurger() {
 
 burgerBtn.onclick = switchBurger;
 
-export {wrapper, overlay, burgerBtn};
+export { wrapper, overlay, burgerBtn };
