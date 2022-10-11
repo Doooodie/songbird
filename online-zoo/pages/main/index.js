@@ -174,12 +174,6 @@ function popup() {
 }
 
 window.onload = function () {
-  // alert(`
-  // Для удобства при брейкпойнтах страница перезагружается сама.
-  // Если не нравится - пишем в консоли девтулзов: "window.onresize = null" и перезагружаем страницу сами :)
-  // Если не нравится так сильно, что хочется снизить баллы - стучим в дискорд, быстренько уберу :)
-  // `);
-
   if (document.documentElement.clientWidth < 1000) {
     testimonialsCard.forEach(card => {
       card.addEventListener('click', popup);
