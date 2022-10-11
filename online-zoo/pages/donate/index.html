@@ -59,18 +59,49 @@
               </a>
             </li>
           </ul>
-          <div class="header-container-mobile">
-            <div class="header-logo">
-              <a href="../../index.html" class="header-link logo-container">
-                <h1 class="logo-text">PetStory<br />online</h1>
-                <img
-                  src="../../assets/icons/misc/bamboo_icon.svg"
-                  alt="bamboo icon"
-                  class="bamboo-icon"
-                />
-              </a>
+
+          <div class="header-mobile">
+            <div class="header-container-mobile">
+              <div class="header-logo">
+                <a href="../../index.html" class="header-link logo-container">
+                  <h1 class="logo-text">PetStory<br />online</h1>
+                  <img
+                    src="../../assets/icons/misc/bamboo_icon.svg"
+                    alt="bamboo icon"
+                    class="bamboo-icon"
+                  />
+                </a>
+              </div>
+              <div class="header-burger"></div>
             </div>
-            <div class="header-burger"></div>
+            <div class="header-bottom">
+              <ul class="header-bottom-container">
+                <li class="header-about">
+                  <a href="../../index.html" class="header-link">About</a>
+                </li>
+                <li class="header-map">
+                  <a href="#" class="header-link">Map</a>
+                </li>
+                <li class="header-zoos">
+                  <a href="#" class="header-link">Zoos</a>
+                </li>
+                <li class="header-donate">
+                  <a href="#" class="header-link link-selected"> Donate </a>
+                </li>
+                <li class="header-contacts">
+                  <a href="#" class="header-link">Contact us</a>
+                </li>
+                <li class="header-designed-by">
+                  <a
+                    href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+                    target="_blank"
+                    class="header-link"
+                  >
+                    Designed by &copy;
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -120,158 +151,162 @@
                 />
               </div>
               <p class="amount-text">Amount</p>
-              <div class="money-radio-selector">
-                <div class="money-radio-buttons">
-                  <hr class="money-radio-line" />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-5000-selector"
-                    id="5000-dollars"
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-2000-selector"
-                    id="2000-dollars"
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-1000-selector"
-                    id="1000-dollars"
-                    checked
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-500-selector"
-                    id="500-dollars"
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-250-selector"
-                    id="250-dollars"
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-100-selector"
-                    id="100-dollars"
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-50-selector"
-                    id="50-dollars"
-                  />
-                  <input
-                    type="radio"
-                    name="radio-selection"
-                    class="radio-selection dollars-25-selector"
-                    id="25-dollars"
-                  />
+              <form class="donation-form">
+                <div class="money-radio-selector">
+                  <div class="money-radio-buttons">
+                    <hr class="money-radio-line" />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-5000-selector"
+                      id="5000-dollars"
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-2000-selector"
+                      id="2000-dollars"
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-1000-selector"
+                      id="1000-dollars"
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-500-selector"
+                      id="500-dollars"
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-250-selector"
+                      id="250-dollars"
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-100-selector"
+                      id="100-dollars"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-50-selector"
+                      id="50-dollars"
+                    />
+                    <input
+                      type="radio"
+                      name="radio-selection"
+                      class="radio-selection dollars-25-selector"
+                      id="25-dollars"
+                    />
+                  </div>
+                  <div class="money-radio-labels">
+                    <label for="5000-dollars" class="radio-label dollars-5000">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">5000</span>
+                    </label>
+                    <label for="2000-dollars" class="radio-label dollars-2000">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">2000</span>
+                    </label>
+                    <label for="1000-dollars" class="radio-label dollars-1000">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">1000</span>
+                    </label>
+                    <label for="500-dollars" class="radio-label dollars-500">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">500</span>
+                    </label>
+                    <label for="250-dollars" class="radio-label dollars-250">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">250</span>
+                    </label>
+                    <label for="100-dollars" class="radio-label dollars-100">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon radio-dollar-icon_checked"
+                      />
+                      <span class="radio-text radio-text_checked">100</span>
+                    </label>
+                    <label for="50-dollars" class="radio-label dollars-50">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">50</span>
+                    </label>
+                    <label for="25-dollars" class="radio-label dollars-25">
+                      <img
+                        src="../../assets/icons/misc/dollar_icon.svg"
+                        alt="dollar icon"
+                        class="radio-dollar-icon"
+                      />
+                      <span class="radio-text">25</span>
+                    </label>
+                  </div>
                 </div>
-                <div class="money-radio-labels">
-                  <label for="5000-dollars" class="radio-label dollars-5000">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
+                <input
+                  type="number"
+                  placeholder="Another amount"
+                  maxlength="4"
+                  min="1"
+                  max="9999"
+                  value="100"
+                  class="another-amount"
+                  required
+                />
+                <div class="period-inputs">
+                  <div class="period-input-container">
+                    <input
+                      type="radio"
+                      name="period-input"
+                      id="monthly"
+                      class="period-input"
                     />
-                    <span class="radio-text">5000</span>
-                  </label>
-                  <label for="2000-dollars" class="radio-label dollars-2000">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
+                    <label for="monthly" class="period-label">Monthly</label>
+                  </div>
+                  <div class="period-input-container">
+                    <input
+                      type="radio"
+                      name="period-input"
+                      id="once"
+                      class="period-input"
+                      checked
                     />
-                    <span class="radio-text">2000</span>
-                  </label>
-                  <label for="1000-dollars" class="radio-label dollars-1000">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon radio-dollar-icon_checked"
-                    />
-                    <span class="radio-text radio-text_checked">1000</span>
-                  </label>
-                  <label for="500-dollars" class="radio-label dollars-500">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
-                    />
-                    <span class="radio-text">500</span>
-                  </label>
-                  <label for="250-dollars" class="radio-label dollars-250">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
-                    />
-                    <span class="radio-text">250</span>
-                  </label>
-                  <label for="100-dollars" class="radio-label dollars-100">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
-                    />
-                    <span class="radio-text">100</span>
-                  </label>
-                  <label for="50-dollars" class="radio-label dollars-50">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
-                    />
-                    <span class="radio-text">50</span>
-                  </label>
-                  <label for="25-dollars" class="radio-label dollars-25">
-                    <img
-                      src="../../assets/icons/misc/dollar_icon.svg"
-                      alt="dollar icon"
-                      class="radio-dollar-icon"
-                    />
-                    <span class="radio-text">25</span>
-                  </label>
+                    <label for="once" class="period-label">Once</label>
+                  </div>
                 </div>
-              </div>
-              <input
-                type="number"
-                placeholder="Another amount"
-                maxlength="4"
-                min="1"
-                max="9999"
-                class="another-amount"
-              />
-              <div class="period-inputs">
-                <div class="period-input-container">
-                  <input
-                    type="radio"
-                    name="period-input"
-                    id="monthly"
-                    class="period-input"
-                  />
-                  <label for="monthly" class="period-label">Monthly</label>
-                </div>
-                <div class="period-input-container">
-                  <input
-                    type="radio"
-                    name="period-input"
-                    id="once"
-                    class="period-input"
-                    checked
-                  />
-                  <label for="once" class="period-label">Once</label>
-                </div>
-              </div>
-              <button type="button" class="button donation-button">
-                FEED A FRIEND NOW
-              </button>
+                <button type="submit" class="button donation-button">
+                  FEED A FRIEND NOW
+                </button>
+              </form>
               <p class="donations-text donations-text-bottom">
                 Share with your friends on social networks
               </p>
@@ -366,14 +401,12 @@
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  class="subscription-email email-default"
+                  class="subscription-email"
                   id="subscription-email"
+                  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                   required
                 />
-                <button
-                  type="button"
-                  class="subscription-submit submit-default"
-                >
+                <button type="submit" class="subscription-submit">
                   Submit
                 </button>
               </div>
@@ -542,6 +575,6 @@
     </div>
 
     <script src="index.js"></script>
-    <script src="../../assets/scripts/email-validator.js"></script>
+    <script type="module" src="../../assets/scripts/burger-menu.js"></script>
   </body>
 </html>
