@@ -1,0 +1,31 @@
+@media (max-width: 500px) {
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 95vw;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--dark-green);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}

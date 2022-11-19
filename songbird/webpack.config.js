@@ -12,19 +12,24 @@ const config = {
     return pageConfig;
   }, {}),
   output: {
+    filename: 'assets/scripts/[name].js',
     clean: true,
   },
   plugins: [].concat(
     listOfComponents.map((page) => {
       const plugin = new HTMLWebpackPlugin({
-        inject: true,
         template: path.resolve(__dirname, 'src', 'pages', `${page}`, `${page}.html`),
         filename: path.resolve(__dirname, 'dist', `${page}.html`),
+        favicon: path.resolve(__dirname, 'src', 'assets', 'icons', 'favicon.ico'),
         chunks: [page],
       });
       return plugin;
     }),
-    [new MiniCssExtractPlugin()],
+    [
+      new MiniCssExtractPlugin({
+        filename: 'assets/styles/[name].css',
+      }),
+    ],
   ),
   module: {
     rules: [
@@ -46,7 +51,14 @@ const config = {
         test: /\.mp3$/,
         type: 'asset/resource',
         generator: {
-          filename: '[name][ext]',
+          filename: 'assets/sounds/[name][ext]',
+        },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext]',
         },
       },
     ],
@@ -57,6 +69,8 @@ const config = {
   },
   devServer: {
     open: true,
+    hot: true,
+    static: path.resolve(__dirname, 'src'),
   },
 };
 
