@@ -127,14 +127,6 @@
   background-color: var(--border-gray);
 }
 
-.error {
-  background-color: var(--red);
-}
-
-.success {
-  background-color: var(--dark-green);
-}
-
 .details-top {
   display: flex;
   align-items: center;
@@ -160,6 +152,25 @@
 
 .details-bottom {
   margin-bottom: 0;
+}
+
+.main-button {
+  background-color: var(--light-gray);
+  padding: 10px 0;
+  border: 1px solid var(--border-gray);
+  transition: 0.3s;
+}
+
+.error {
+  background-color: var(--red);
+}
+
+.success {
+  background-color: var(--dark-green);
+}
+
+.main-button.success:hover {
+  background-color: var(--light-green);
 }
 
 @media (max-width: 1120px) {
