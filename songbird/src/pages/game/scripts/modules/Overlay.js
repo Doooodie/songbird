@@ -7,7 +7,7 @@ class Overlay {
   }
 
   open(score, callback) {
-    this.heading.textContent = `Вы прошли игру, получив ${score} баллов из 30.`;
+    this.heading.textContent = `Вы прошли игру, получив ${score} из 30 баллов.`;
     this.overlay.classList.remove('hidden');
     this.container.classList.remove('hidden');
     this.playButton.addEventListener('click', callback);
