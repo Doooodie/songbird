@@ -77,8 +77,6 @@ class GameDirector {
     this.insertSummary();
     this.insertBirdsNames();
     this.handleBirdsClicks();
-
-    console.log(`Правильный ответ: ${this.birdName}`);
   };
 
   finishRound() {
