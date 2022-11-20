@@ -1,16 +1,14 @@
-.main-heading {
+.main-heading,
+.error-message {
   text-align: center;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .main-container {
   padding: 0;
   border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .results-container {
@@ -23,10 +21,16 @@
   padding: 15px 20px;
   border: 1px solid var(--border-gray);
   font-size: 1.5em;
+  transition: background-color .3s;
 }
 
 .result::marker {
   color: var(--border-gray);
+}
+
+.result:hover {
+  cursor: default;
+  background-color: var(--border-gray);
 }
 
 .result:first-child {

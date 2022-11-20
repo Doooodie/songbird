@@ -1,3 +1,33 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-buttons {
+  display: flex;
+  gap: 5vw;
+}
+
+.overlay-button {
+  padding: 15px;
+  text-align: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -44,6 +74,7 @@
   width: 200px;
   height: 155px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .summary-info {
@@ -97,6 +128,7 @@
   padding: 15px 20px;
   border: 1px solid var(--border-gray);
   flex: auto;
+  transition: background-color .3s;
 }
 
 .bird-name:hover {
@@ -146,7 +178,7 @@
 }
 
 .details-birdname,
-.details-latin {
+.details-species {
   margin: 0;
 }
 
@@ -158,7 +190,7 @@
   background-color: var(--light-gray);
   padding: 10px 0;
   border: 1px solid var(--border-gray);
-  transition: 0.3s;
+  cursor: default;
 }
 
 .error {
@@ -169,8 +201,13 @@
   background-color: var(--dark-green);
 }
 
+.hidden {
+  display: none;
+}
+
 .main-button.success:hover {
   background-color: var(--light-green);
+  cursor: pointer;
 }
 
 @media (max-width: 1120px) {

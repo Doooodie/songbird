@@ -8,17 +8,22 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="overlay"></div>
+      <div class="main-container overlay-container">
+        <h2 class="overlay-heading"></h2>
+        <div class="overlay-buttons">
+          <a class="button overlay-button play-button">Играть снова</a>
+          <a href="results.html" class="button overlay-button results-button">Узнать результаты</a>
+        </div>
+      </div>
+
       <div class="container">
         <header class="header">
           <nav class="header-nav">
             <ul class="header-links">
               <li class="songbird-logo-container">
                 <a href="index.html" class="songbird-logo-link">
-                  <img
-                    src="./assets/images/songbird-logo.svg"
-                    alt="Логотип Songbird"
-                    class="songbird-logo"
-                  />
+                  <img alt="Логотип Songbird" class="songbird-logo" />
                 </a>
               </li>
               <li class="game-link-container">
@@ -32,10 +37,10 @@
         </header>
 
         <main class="main">
-          <p class="score">Очки: 0</p>
+          <p class="score"></p>
 
           <ul class="sections">
-            <li class="section section-first section-active">Разминка</li>
+            <li class="section section-first">Разминка</li>
             <li class="section">Воробьиные</li>
             <li class="section">Лесные птицы</li>
             <li class="section">Певчие птицы</li>
@@ -44,12 +49,12 @@
           </ul>
 
           <div class="main-container summary-container">
-            <img src="./assets/images/bird.jpg" alt="Фотография птицы" class="bird-image" />
+            <img alt="Фотография птицы" class="bird-image summary-bird-image" />
             <div class="summary-info">
-              <p class="summary-birdname">Ворон</p>
+              <p class="summary-birdname"></p>
               <hr class="line" />
-              <div class="summary-audio">
-                <audio src="./assets/sounds/win.mp3" controls></audio>
+              <div class="summary-audio-container">
+                <audio controls class="summary-audio"></audio>
               </div>
             </div>
           </div>
@@ -57,33 +62,33 @@
           <div class="bottom-container">
             <div class="main-container bottom-subcontainer birds-names-container">
               <ul class="birds-names">
-                <li class="bird-name first-name"><span class="indicator"></span>Ворон</li>
-                <li class="bird-name"><span class="indicator"></span>Журавль</li>
-                <li class="bird-name"><span class="indicator"></span>Ласточка</li>
-                <li class="bird-name"><span class="indicator"></span>Козодой</li>
-                <li class="bird-name"><span class="indicator"></span>Кукушка</li>
-                <li class="bird-name last-name"><span class="indicator"></span>Синица</li>
+                <li class="bird-name first-name"></li>
+                <li class="bird-name"></li>
+                <li class="bird-name"></li>
+                <li class="bird-name"></li>
+                <li class="bird-name"></li>
+                <li class="bird-name last-name"></li>
               </ul>
             </div>
             <div class="main-container bottom-subcontainer details-container">
+              <div class="prompt hidden">
+                <p class="prompt-info">Послушайте плеер.</p>
+                <p class="prompt-info">Выберите птицу из списка.</p>
+              </div>
               <div class="details">
                 <div class="details-top">
-                  <img src="./assets/images/bird.jpg" alt="Фотография птицы" class="bird-image" />
+                  <img alt="Фотография птицы" class="bird-image details-bird-image" />
                   <div class="details-info">
-                    <p class="details-birdname">Ворон</p>
+                    <p class="details-birdname"></p>
                     <hr class="line" />
-                    <p class="details-latin">Corvus corax</p>
+                    <p class="details-species"></p>
                     <hr class="line" />
-                    <div class="details-audio">
-                      <audio src="./assets/sounds/error.mp3" controls></audio>
+                    <div class="details-audio-container">
+                      <audio controls class="details-audio"></audio>
                     </div>
                   </div>
                 </div>
-                <p class="details-bottom">
-                  Ворон – крупная птица. Длина тела достигает 70 сантиметров, размах крыльев – до
-                  полутора метров. Вороны населяют окрестности Тауэра. В Англии бытует поверье, что
-                  в день, когда черные вороны улетят от Тауэра, монархия рухнет.
-                </p>
+                <p class="details-bottom"></p>
               </div>
             </div>
           </div>
@@ -95,11 +100,7 @@
             <ul class="footer-links">
               <li class="rsschool-logo-container">
                 <a href="https://rs.school/js/" target="_blank" class="rsschool-logo-link">
-                  <img
-                    src="./assets/images/rsschool-logo.svg"
-                    alt="Логотип RS School"
-                    class="rsschool-logo"
-                  />
+                  <img alt="Логотип RS School" class="rsschool-logo" />
                 </a>
               </li>
               <li class="author-info-container">

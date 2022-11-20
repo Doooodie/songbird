@@ -35,4 +35,9 @@ html {
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color .3s;
+}
+
+.button:not(:disabled):hover {
+  background-color: var(--light-green);
 }

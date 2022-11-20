@@ -5,5 +5,6 @@ import '../../../assets/styles/header.css';
 import '../../../assets/styles/footer.css';
 import '../styles/index.css';
 
-import songBirdLogo from '../../../assets/images/songbird-logo.svg';
-import rsSchoolLogo from '../../../assets/images/rsschool-logo.svg';
+import rateJob from './modules/rateJob';
+
+rateJob(230);

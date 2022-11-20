@@ -5,6 +5,6 @@ import '../../../assets/styles/header.css';
 import '../../../assets/styles/footer.css';
 import '../styles/game.css';
 
-import birdImamge from '../../../assets/images/bird.jpg';
-import winSound from '../../../assets/sounds/win.mp3';
-import errorSound from '../../../assets/sounds/error.mp3';
+import gameDirector from './modules/GameDirector';
+
+gameDirector.startGame();

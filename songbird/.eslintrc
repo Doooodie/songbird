@@ -3,9 +3,8 @@
   "root": true,
   "extends": "airbnb-base",
   "rules": {
-    "import/no-cycle": "off",
-    "no-alert": "off",
-    "no-restricted-globals": ["off", "confirm"]
+    "no-console": "off",
+    "class-methods-use-this": "off"
   },
   "env": {
     "browser": true,
