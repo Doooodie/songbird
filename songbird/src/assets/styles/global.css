@@ -8,18 +8,19 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapper {
+.body {
   color: var(--white);
   background-color: var(--dark-gray);
 }
 
-.container {
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 95vw;
   min-height: 100vh;
   margin: 0 auto;
+
 }
 
 .main-container {

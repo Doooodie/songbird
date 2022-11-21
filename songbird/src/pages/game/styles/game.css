@@ -141,13 +141,13 @@
   border-top-right-radius: 10px;
 }
 
-.bird-name:not(.first-name) {
-  border-top-width: 0;
-}
-
 .last-name {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.bird-name:not(.first-name) {
+  border-top-width: 0;
 }
 
 .indicator {
@@ -229,7 +229,8 @@
     flex-direction: column;
   }
 
-  .details-bottom {
+  .details-bottom,
+  .prompt {
     margin-left: 20px;
     margin-right: 20px;
   }
