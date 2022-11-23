@@ -33,6 +33,8 @@ class GameDirector {
     this.gameFinished = false;
     this.roundFinished = false;
     this.clickedOnce = false;
+
+    this.lastBird = null;
   }
 
   insertLogos() {
@@ -77,6 +79,8 @@ class GameDirector {
     this.insertSummary();
     this.insertBirdsNames();
     this.handleBirdsClicks();
+
+    console.log(this.birdName);
   };
 
   finishRound() {
@@ -153,7 +157,12 @@ class GameDirector {
         this.errorSound.currentTime = 0;
         this.errorSound.play();
         indicator.classList.add('error');
-        if (this.score > 0) this.score -= 1;
+
+        if (this.lastBird !== birdName) {
+          if (this.score > 0) this.score -= 1;
+        }
+
+        this.lastBird = e.target.textContent;
       }
     }
   };
