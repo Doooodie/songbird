@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("".concat("%c","Самооценка: ").concat(230," баллов"),"font-size: 2em")})();
+(()=>{"use strict";console.log("".concat("%c","Самооценка: ").concat(240," баллов"),"font-size: 2em")})();
