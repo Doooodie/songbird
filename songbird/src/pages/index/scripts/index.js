@@ -7,4 +7,4 @@ import '../styles/index.css';
 
 import rateJob from './modules/rateJob';
 
-rateJob(230);
+rateJob(240);
