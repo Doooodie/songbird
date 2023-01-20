@@ -1,0 +1,43 @@
+@media (max-width: 500px) {
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 95vw;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main-container {
+  padding: 20px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: 10px;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--dark-green);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.button:not(:disabled):hover {
+  background-color: var(--light-green);
+}

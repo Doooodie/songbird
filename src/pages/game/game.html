@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Songbird | Игра</title>
+  </head>
+  <body class="body">
+    <div class="overlay"></div>
+    <div class="main-container overlay-container">
+      <h2 class="overlay-heading"></h2>
+      <div class="overlay-buttons">
+        <a class="button overlay-button play-button">Играть снова</a>
+        <a href="results.html" class="button overlay-button results-button">Узнать результаты</a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="header-links">
+            <li class="songbird-logo-container">
+              <a href="index.html" class="songbird-logo-link">
+                <img alt="Логотип Songbird" class="songbird-logo" />
+              </a>
+            </li>
+            <li class="game-link-container">
+              <a href="#" class="button header-button">Играть</a>
+            </li>
+            <li class="results-link-container">
+              <a href="results.html" class="button header-button">Результаты</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <p class="score"></p>
+
+        <ul class="sections">
+          <li class="section section-first">Разминка</li>
+          <li class="section">Воробьиные</li>
+          <li class="section">Лесные птицы</li>
+          <li class="section">Певчие птицы</li>
+          <li class="section">Хищные птицы</li>
+          <li class="section section-last">Морские птицы</li>
+        </ul>
+
+        <div class="main-container summary-container">
+          <img alt="Фотография птицы" class="bird-image summary-bird-image" />
+          <div class="summary-info">
+            <p class="summary-birdname"></p>
+            <hr class="line" />
+            <div class="summary-audio-container">
+              <audio controls class="summary-audio"></audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-container">
+          <div class="main-container bottom-subcontainer birds-names-container">
+            <ul class="birds-names">
+              <li class="bird-name first-name"></li>
+              <li class="bird-name"></li>
+              <li class="bird-name"></li>
+              <li class="bird-name"></li>
+              <li class="bird-name"></li>
+              <li class="bird-name last-name"></li>
+            </ul>
+          </div>
+          <div class="main-container bottom-subcontainer details-container">
+            <div class="prompt hidden">
+              <p class="prompt-info">Послушайте плеер.</p>
+              <p class="prompt-info">Выберите птицу из списка.</p>
+            </div>
+            <div class="details">
+              <div class="details-top">
+                <img alt="Фотография птицы" class="bird-image details-bird-image" />
+                <div class="details-info">
+                  <p class="details-birdname"></p>
+                  <hr class="line" />
+                  <p class="details-species"></p>
+                  <hr class="line" />
+                  <div class="details-audio-container">
+                    <audio controls class="details-audio"></audio>
+                  </div>
+                </div>
+              </div>
+              <p class="details-bottom"></p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="button main-button">Следующий уровень</button>
+      </main>
+
+      <footer class="footer">
+        <nav class="footer-nav">
+          <ul class="footer-links">
+            <li class="rsschool-logo-container">
+              <a href="https://rs.school/js/" target="_blank" class="rsschool-logo-link">
+                <img alt="Логотип RS School" class="rsschool-logo" />
+              </a>
+            </li>
+            <li class="author-info-container">
+              С ❤️ от
+              <a href="https://github.com/Doooodie" target="_blank" class="footer-link">Doodie</a>
+              , 2022
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
